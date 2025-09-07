@@ -1,23 +1,28 @@
-const navLinks = document.querySelectorAll('nav a');//select all anchor tags inside nav
+const navLinks = document.querySelectorAll('nav a');
+const header = document.querySelector('header')!;
+const darkModeToggle = document.getElementById('dark-mode-toggle')!;
+const body = document.body;
 
-navLinks.forEach(link => {//iterate through each link
+// Smooth scroll
+navLinks.forEach(link => {
   link.addEventListener('click', (e) => {
-    e.preventDefault(); 
-
-    
-    const targetId = link.getAttribute('href')?.substring(1);//remove '#' from href
-    const targetSection = document.getElementById(targetId!);//for safety add
-
-   
-    targetSection?.scrollIntoView({ behavior: 'smooth' });//smooth scroll
+    e.preventDefault();
+    const targetId = link.getAttribute('href')?.substring(1);
+    const targetSection = document.getElementById(targetId!);
+    targetSection?.scrollIntoView({ behavior: 'smooth' });
   });
 });
 
-const header = document.querySelector('header')!;//non-null assertion
+// Scroll shadow
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {//if scrolled more than 50px
-    header.classList.add('scrolled');//add class
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
   } else {
-    header.classList.remove('scrolled');//remove class
+    header.classList.remove('scrolled');
   }
+});
+
+// Dark mode toggle
+darkModeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
 });
