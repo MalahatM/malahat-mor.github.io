@@ -188,7 +188,22 @@ body.dark-mode .home p {
 
   /* Skills Section */
 
-  .skills-container {
+  /* Skills Section */
+#skills {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff3e0;
+}
+
+.skills-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #555;
+  margin: 10px 0 30px 0;
+  font-weight: 500;
+}
+
+.skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -222,7 +237,12 @@ body.dark-mode .home p {
   text-align: center;
 }
 
-/* Responsive */
+@media (max-width: 768px) {
+  .skills-container {
+    gap: 15px;
+  }
+}
+
 @media (max-width: 600px) {
   .skills-container {
     flex-direction: column;
