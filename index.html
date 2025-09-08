@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malahat Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  
 </head>
 <body>
   <header>
@@ -15,38 +17,83 @@
       <a href="#about-me">About</a>
       <a href="#contact">Contact</a>
       <a href="#projects">Projects</a>
-      <button id="dark-mode-toggle">🌙</button>
+      <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
     </nav>
   </header>
 
+  <!-- Home Section -->
   <section id="home" class="home">
     <div class="home-text">
       <h1>Malahat Mortezavi</h1>
       <h2>Frontend Developer</h2>
       <p>I build modern web applications with TypeScript and clean UI/UX design.</p>
-      <button class="cta-btn">View My Work</button>
+      <button class="cta-btn">View My Work <i class="fas fa-arrow-right"></i></button>
     </div>
     <div class="home-image">
       <img src="images/profile.jpg" alt="Profile Picture">
     </div>
   </section>
 
-  <section id="skills">
-    <h2>My Skills</h2>
-  </section>
+  <!-- Skills Section -->
+ 
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <div class="skill-title">HTML/CSS</div>
+      <div class="skill-description">Building responsive and semantic web pages with clean CSS.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-title">Javascript</div>
+      <div class="skill-description">Writing dynamic and interactive frontend functionality.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-title">React</div>
+      <div class="skill-description">Creating reusable components and managing state efficiently.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-title">UX/UI</div>
+      <div class="skill-description">Designing user-friendly and modern interfaces.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-title">Agile Methods</div>
+      <div class="skill-description">Applying Agile methodologies for project management.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-title">Testing (Playwright, Jest)</div>
+      <div class="skill-description">Writing automated tests to ensure code quality.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-title">Typescript</div>
+      <div class="skill-description">Using TypeScript for type safety and better code maintainability.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-title">Express</div>
+      <div class="skill-description">Building server-side applications with Express.js.</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-title">Node.js</div>
+      <div class="skill-description">Creating backend services and APIs with Node.js.</div>
+    </div>
+  </div>
+</section>
 
+
+  <!-- About Section -->
   <section id="about-me">
     <h2>About Me</h2>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
   </section>
 
   <script src="dist/index.js"></script>
-</body>
-</html>
+  </body>
+  </html>
