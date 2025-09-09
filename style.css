@@ -252,3 +252,64 @@ body.dark-mode .home p {
     width: 90%;
   }
 }
+
+/* About Me Section */
+#about-me {
+  padding: 80px 20px;
+  background-color: #f3e5f5;
+  text-align: center;
+}
+
+#about-me h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    text-align: center;
+  }
+}

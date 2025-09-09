@@ -1,17 +1,15 @@
 {
   "name": "malahat-mor-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
+  "type": "module",
+  "main": "dist/index.js",
+ "scripts": {
+  "dev": "tsc -w & lite-server",
   "build": "tsc"
-
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+}
+,
   "devDependencies": {
+    "lite-server": "^2.6.1",
     "typescript": "^5.9.2"
   }
 }
