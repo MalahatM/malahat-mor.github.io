@@ -285,6 +285,24 @@ body.dark-mode .home p {
 .about-text p {
   margin-bottom: 15px;
 }
+.about-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #d18cc9;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about-btn:hover {
+  background-color: #890f87;
+  transform: translateY(-3px);
+}
+
 
 .about-image {
   flex: 1;
@@ -293,7 +311,7 @@ body.dark-mode .home p {
 }
 
 .about-image img {
-  width: 300px;
+  width: 90%;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
